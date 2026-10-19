@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1°A! Esercitiamoci per la verifica! — IIS Gregorio Mendel</title>
+<meta name="description" content="Esercizi di ripasso autocorrettivi per la verifica di inglese della classe 1°A.">
+<style>
+:root{--g900:#123c16;--g800:#1b5e20;--g700:#2e7d32;--g600:#388e3c;--g400:#4caf50;--g100:#c8e6c9;--g50:#e8f5e9;--bg:#f5f5f5;--txt:#1a1a1a;--mut:#475569;--bad:#b3261e;--badbg:#fdecea;--fs:17px}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:var(--fs);line-height:1.65}
+body.big{--fs:20px;line-height:1.9}
+:focus-visible{outline:3px solid var(--g400);outline-offset:2px}
+header.top{background:linear-gradient(135deg,var(--g800),var(--g900));color:#fff;position:sticky;top:0;z-index:30;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.wrap{max-width:960px;margin:0 auto;padding:0 18px}
+.hd{display:flex;align-items:center;gap:14px;padding:12px 0}
+.hd img{width:54px;height:54px;border-radius:50%;background:#fff;padding:2px;object-fit:contain;flex:none}
+.hd small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.85;font-weight:600}
+.hd b{font-size:20px;line-height:1.2}
+.hero{background:#fff;border-bottom:1px solid #dfe5e0;text-align:center;padding:34px 0 26px}
+.tag{display:inline-block;background:rgba(46,125,50,.1);color:var(--g700);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:99px}
+.hero h2{font-size:clamp(26px,5vw,38px);margin:12px 0 8px;color:var(--g900);line-height:1.2}
+.hero p{max-width:640px;margin:0 auto;color:var(--mut)}
+.how{background:var(--g50);border-left:5px solid var(--g700);border-radius:0 12px 12px 0;padding:14px 18px;margin:22px 0}
+.how ul{margin:6px 0 0;padding-left:20px}
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:8px 0 6px}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--g700);color:#fff;border:0;border-radius:10px;padding:9px 16px;font-weight:600}
+.btn:hover{background:var(--g800)}
+.btn.sec{background:#fff;color:var(--g800);border:2px solid var(--g700)}
+.btn.sec:hover{background:var(--g50)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 0}
+.tab{flex:1 1 220px;text-align:left;background:#fff;border:2px solid #cfd8d1;border-radius:14px;padding:12px 16px}
+.tab b{display:block;color:var(--g900);font-size:1.05em}
+.tab span{font-size:.85em;color:var(--mut)}
+.tab[aria-selected=true]{border-color:var(--g700);background:var(--g50);box-shadow:0 0 0 3px rgba(46,125,50,.15)}
+.score{position:sticky;top:78px;z-index:20;background:#fff;border:1px solid #cfd8d1;border-radius:12px;padding:10px 14px;margin:14px 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.bar{flex:1 1 160px;height:12px;background:#e3e8e4;border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--g600);transition:width .4s}
+.ex{background:#fff;border:1px solid #dbe2dc;border-radius:16px;padding:18px 20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.ex h3{margin:0 0 2px;font-size:1.12em;color:var(--g900);display:flex;gap:10px;align-items:baseline}
+.ex h3 .n{background:var(--g700);color:#fff;border-radius:8px;padding:0 9px;font-size:.9em;flex:none}
+.ex .ins{color:var(--mut);margin:0 0 8px;font-size:.95em}
+details.tip{margin:4px 0 10px;font-size:.92em}
+details.tip summary{cursor:pointer;color:var(--g700);font-weight:600}
+details.tip div{background:var(--g50);border-radius:10px;padding:8px 12px;margin-top:6px}
+.box{border:2px solid var(--g800);border-radius:10px;padding:8px 12px;text-align:center;font-weight:700;margin:6px 0 12px;background:#fff}
+ol.items{margin:0;padding:0;list-style:none;counter-reset:q}
+ol.items>li{counter-increment:q;padding:6px 0 6px 34px;position:relative;border-bottom:1px dashed #e4e9e5}
+ol.items>li:last-child{border-bottom:0}
+ol.items>li::before{content:counter(q);position:absolute;left:0;top:6px;width:26px;height:26px;border-radius:50%;background:var(--g50);color:var(--g800);font-weight:700;text-align:center;line-height:26px;font-size:.85em}
+p.txt{line-height:2.3;margin:6px 0}
+input.g{font:inherit;border:0;border-bottom:2px solid #6b7c6f;background:#f7faf7;padding:1px 6px;margin:0 3px;border-radius:4px 4px 0 0;text-align:center;color:var(--txt)}
+input.g:focus{background:var(--g50);border-bottom-color:var(--g700)}
+input.rw,textarea.rw{font:inherit;width:100%;border:2px solid #cfd8d1;border-radius:10px;padding:6px 10px;margin-top:6px;background:#f7faf7}
+textarea.rw{min-height:60px;resize:vertical}
+select.sel{font:inherit;border:2px solid #b8c7bb;border-radius:9px;padding:3px 8px;background:#f7faf7;max-width:100%}
+select.sel.ok{border-color:var(--g600)}select.sel.ko{border-color:var(--bad)}
+p.read{background:#fafcfa;border:1px solid #dbe2dc;border-radius:12px;padding:10px 14px;margin:6px 0 10px;font-style:italic}
+.seg{display:inline-flex;gap:0;vertical-align:baseline;margin:0 3px;border:2px solid var(--g700);border-radius:9px;overflow:hidden;line-height:1.3}
+.seg button,.mcq button{background:#fff;border:0;padding:2px 11px;color:var(--g800);font-weight:600}
+.seg button+button{border-left:2px solid var(--g700)}
+.seg button[aria-pressed=true],.mcq button[aria-pressed=true]{background:var(--g700);color:#fff}
+.mcq{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:6px}
+.mcq button{border:2px solid #b8c7bb;border-radius:10px;padding:6px 10px;text-align:left}
+.mcq button b{margin-right:6px}
+.ok{background:#e6f4e7!important;border-color:var(--g600)!important;color:var(--g900)!important}
+.ko{background:var(--badbg)!important;border-color:var(--bad)!important;color:var(--bad)!important}
+.seg.ok,.seg.ko{background:none!important}
+.seg button.ok{background:#c8e6c9!important;color:var(--g900)!important}
+.seg button.ko,.mcq button.ko{background:var(--badbg)!important;color:var(--bad)!important;text-decoration:line-through}
+.mark{font-weight:800;margin-left:2px}
+.mark.ok{color:var(--g700);background:none!important}.mark.ko{color:var(--bad);background:none!important}
+.sol{display:inline-block;margin-left:4px;padding:0 8px;border-radius:8px;background:#e6f4e7;color:var(--g900);font-weight:600;font-size:.92em}
+.model{margin-top:6px;padding:8px 12px;background:#e6f4e7;border-radius:10px;color:var(--g900);font-weight:600}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.res{font-weight:700;color:var(--g800)}
+.free-note{font-size:.85em;color:var(--mut)}
+footer{background:var(--g900);color:rgba(255,255,255,.82);margin-top:50px;padding:26px 0;font-size:.9em}
+footer a{color:#a5d6a7}
+#up{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:var(--g700);color:#fff;font-size:22px;box-shadow:0 4px 12px rgba(0,0,0,.3);display:none;z-index:40}
+#up.show{display:block}
+.sr{position:absolute;left:-9999px}
+@media (max-width:700px){.score{position:static}.ex{padding:14px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap hd">
+<img src="data:image/png;base64,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" alt="Logo IIS Gregorio Mendel">
+<div><small>IIS Gregorio Mendel · Villa Cortese (MI)</small><b>English · Classe 1ª</b></div>
+</div></header>
+<section class="hero"><div class="wrap">
+<h2>1°A! Esercitiamoci per la verifica!</h2>
+<p>Esercizi autocorrettivi da fare a casa. Rispondi, premi <b>Controlla</b> e correggi gli errori da solo.</p>
+</div></section>
+<main class="wrap">
+<div class="how"><b>Come funziona</b>
+<ul>
+<li>Gli esercizi sono tutti insieme: <b>scelta tra parole, box di parole, frasi da completare</b>. Falli in ordine o scegli quelli che ti servono di più.</li>
+<li>Premi <b>Controlla</b>: ✓ verde = giusto, ✗ rosso = da rivedere. Puoi correggere e controllare di nuovo.</li>
+<li>Se sei bloccato, premi <b>Mostra soluzioni</b>. Poi <b>Ricomincia</b> per rifare l’esercizio.</li>
+<li>Nelle traduzioni scrivi la tua frase e poi confrontala con la soluzione modello (non c’è punteggio automatico).</li>
+</ul></div>
+<div class="tools"><button class="btn sec" id="big" aria-pressed="false">A+ Testo più grande</button></div>
+<div class="tabs" role="tablist" id="tabs" hidden></div>
+<div id="levels"></div>
+</main>
+<footer><div class="wrap">
+<b style="color:#fff">Istituto di Istruzione Superiore “Gregorio Mendel”</b><br>
+Via Ferrazzi, 15 — 20035 Villa Cortese (MI) · <a href="https://agrariomendel.edu.it/">agrariomendel.edu.it</a><br>
+<span style="opacity:.7">Prof. Crespi · IIS Mendel</span>
+</div></footer>
+<button id="up" aria-label="Torna su" title="Torna su">↑</button>
+<script>
+var TIP={
+pron:"Soggetto: I, you, he, she, it, we, they. Complemento (dopo il verbo o la preposizione): me, you, him, her, it, us, them.",
+qw:"Whose = di chi (+ nome) · Why = perché · How many = quanti · What time = a che ora · Who = chi · Where = dove · When = quando · How old = quanti anni.",
+art:"a + suono di consonante (a university), an + suono di vocale (an hour, an engineer), the = cosa già nota o unica. Nessun articolo con i plurali e i nomi non numerabili in senso generale (I love music).",
+adj:"Ordine: opinione → misura → età → colore → origine (a lovely big old red Italian car). L’aggettivo sta prima del nome e non prende mai la -s.",
+plu:"+s · -es dopo s, x, ch, sh, o (boxes, potatoes) · consonante + y → -ies (cities) · -f/-fe → -ves (knives) · irregolari: man → men, woman → women, child → children, tooth → teeth, foot → feet, sheep → sheep.",
+dem:"this / these = vicino · that / those = lontano. This e that sono singolari, these e those plurali.",
+there:"There is + singolare · There are + plurale · negativo: there isn’t / there aren’t · domanda: Is there…? / Are there…?",
+pl:"in = dentro · on = sopra, a contatto · at = punto preciso · under = sotto · between = tra (due cose) · opposite = di fronte · next to = accanto a · behind = dietro · in front of = davanti a.",
+pt:"in + mesi, stagioni · on + giorni (on Monday) · at + orari, at Christmas, at the weekend.",
+hg:"I / you / we / they have got · he / she / it has got · negativo: haven’t / hasn’t got · domanda: Have / Has + soggetto + got? · risposta breve: Yes, I have. / No, she hasn’t.",
+sa:"some = frasi affermative, offerte e richieste (Would you like some tea?) · any = frasi negative e domande · no = significato negativo con verbo affermativo (I’ve got no time).",
+pa:"my, your, his, her, its, our, their. Dipende dal possessore: his sister = la sorella di lui; her brother = il fratello di lei.",
+gs:"Singolare: nome + ’s (my sister’s room) · plurale in -s: solo ’ (the girls’ bikes) · plurale irregolare: ’s (the children’s toys) · due possessori insieme: ’s solo sull’ultimo (Chris and Ben’s house)."
+};
+
+var DATA=[
+
+/* ================= STANDARD ================= */
+{id:'standard',name:'Standard (A2)',desc:'Tutti gli esercizi, in forma aperta: il livello della verifica normale.',exercises:[
+{t:'Pronouns',i:'Completa con il pronome personale (soggetto o complemento).',tip:TIP.pron,items:[
+"My neighbours are very kind. I often talk to [[them]] in the morning.",
+"Elisa and I are cousins. [[We]] spend the summer together.",
+"Davide is ill today. Can you call [[him]]?",
+"I’ve got a new tablet. I use [[it]] every day.",
+"Sofia is my classmate. The teacher is explaining the lesson to [[her]].",
+"Please wait for [[us]] at the bus stop."]},
+{t:'Question words',i:'Completa con la question word giusta (anche due parole).',tip:TIP.qw,items:[
+"[[Whose]] phone is ringing?  –  It’s Omar’s.",
+"[[Why]] are you laughing?  –  Because this video is hilarious.",
+"[[How many]] pencils have you got in your case?  –  Four.",
+"[[What time]] does the bus leave?  –  At ten past seven.",
+"[[Where]] is my umbrella?  –  Behind the door.",
+"[[Who]] is that tall man?  –  He’s my uncle.",
+"[[How old]] is your little brother?  –  He’s still a baby.",
+"[[When]] is the school trip?  –  In May."]},
+{t:'Articles',i:'Completa con a / an / the oppure – (nessun articolo).',tip:TIP.art,items:[
+"Jack’s father is [[a]] doctor.",
+"Can you switch off [[the]] light, please?",
+"My cousin has [[an]] umbrella and [[a]] hat.",
+"I don’t like [[–]] coffee, but I love [[–]] tea.",
+"She wants [[an]] orange for breakfast.",
+"We sometimes watch [[the]] news in the evening.",
+"It takes [[an]] hour to get to Milan."]},
+{t:'Adjectives',i:'Metti in ordine le parole e scrivi il gruppo nominale.',tip:TIP.adj,type:'rewrite',items:[
+{s:"a / bike / red / great / new",a:["a great new red bike"]},
+{s:"a / dress / long / beautiful / green",a:["a beautiful long green dress"]},
+{s:"three / cats / big / old / grey",a:["three big old grey cats"]},
+{s:"an / film / interesting / American / long",a:["an interesting long American film"]},
+{s:"a / girl / short / young / Spanish",a:["a short young Spanish girl"]}]},
+{t:'Plurals',i:'Scrivi il plurale.',tip:TIP.plu,items:[
+"man  →  [[men]]","foot  →  [[feet]]","leaf  →  [[leaves]]","wife  →  [[wives]]","family  →  [[families]]","bus  →  [[buses]]","tomato  →  [[tomatoes]]","glass  →  [[glasses]]"]},
+{t:'This / That / These / Those',i:'Completa con this, that, these o those.',tip:TIP.dem,items:[
+"Look at [[that]] mountain, it’s huge!",
+"[[These]] cookies here are delicious.",
+"Do you know [[those]] people over there?",
+"[[This]] is my seat; [[that]] seat over there is free.",
+"[[Those]] trees near the river are very old.",
+"Can I have [[these]] sweets, please? They’re here, next to me."]},
+{t:'There is / There are',i:'Completa con is, are, isn’t, aren’t.',tip:TIP.there,items:[
+"There [[is]] a small museum in my town.",
+"There [[are]] a lot of desks in the classroom.",
+"There [[isn’t|is not]] any bread in the kitchen.",
+"[[Is]] there a post office near here?  –  Yes, there [[is]].",
+"[[Are]] there any cinemas in your town?  –  No, there [[aren’t|are not]].",
+"There [[are]] two windows and a big mirror in my room."]},
+{t:'Prepositions of place',i:'Completa con una preposizione di luogo.',tip:TIP.pl,items:[
+"The ball is [[under]] the car.",
+"The supermarket is [[opposite]] the library, across the street.",
+"My school is [[between]] the park and the church.",
+"There is a picture [[on]] the fridge.",
+"My mum is [[at]] work now.",
+"The kids are playing [[in front of]] the school.",
+"The bin is [[behind]] the door.",
+"The keys are [[in]] my jacket."]},
+{t:'Prepositions of time',i:'Completa con in, on o at.',tip:TIP.pt,items:[
+"My cousin’s birthday is [[in]] March.",
+"We have Science [[on]] Friday afternoon.",
+"The film begins [[at]] eight o’clock.",
+"My friends visit me [[at|on]] the weekend.",
+"It often snows [[in]] winter.",
+"The exam is [[on]] Monday.",
+"We eat panettone [[at]] Christmas."]},
+{t:'Have got',i:'Completa con la forma corretta di have got (affermativa, negativa, domanda, risposta breve).',tip:TIP.hg,items:[
+"(+)  My aunt [[has got|’s got]] a beautiful garden.",
+"(+)  They [[have got|’ve got]] a big TV.",
+"(–)  We [[haven’t got|have not got]] a car.",
+"(–)  Elisa [[hasn’t got|has not got]] any sisters.",
+"(?)  [[Have]] they [[got]] a swimming pool?",
+"(?)  [[Has]] your teacher [[got]] a dog?",
+"Have you got a tablet?  –  Yes, I [[have]].",
+"Has Omar got a bike?  –  No, he [[hasn’t|has not]]."]},
+{t:'Some / any / no',i:'Completa con some, any o no.',tip:TIP.sa,items:[
+"Would you like [[some]] biscuits?",
+"There isn’t [[any]] sugar in my tea.",
+"Have they got [[any]] pets?",
+"I can see [[some]] birds in the tree.",
+"I’ve got [[no]] idea.  =  I haven’t got [[any]] idea.",
+"Could I have [[some]] bread, please?",
+"Is there [[any]] juice left?"]},
+{t:'Possessive adjectives',i:'Completa con my, your, his, her, its, our, their.',tip:TIP.pa,items:[
+"Omar loves football. [[His]] favourite team is Inter.",
+"My parents like [[their]] jobs.",
+"We are cleaning [[our]] classroom.",
+"The cat is licking [[its]] fur.",
+"Is this [[your]] bag, Sofia?",
+"I’m calling [[my]] grandmother.",
+"Elisa has a sister. [[Her]] sister is very funny."]},
+{t:'Possessive ’s',i:'Riscrivi usando il genitivo sassone.',tip:TIP.gs,type:'rewrite',items:[
+{s:"the phone of my brother  →",a:["my brother’s phone"]},
+{s:"the shoes of the children  →",a:["the children’s shoes"]},
+{s:"the desks of the teachers (many teachers)  →",a:["the teachers’ desks"]},
+{s:"the garden of my grandparents  →",a:["my grandparents’ garden"]},
+{s:"the flat of Kevin and Nina (they share it)  →",a:["Kevin and Nina’s flat"]},
+{s:"the tail of the cat  →",a:["the cat’s tail"]},
+{s:"the bag of Chris  →",a:["Chris’s bag","Chris’ bag"]},
+{s:"the cars of the two men  →",a:["the men’s cars"]}]},
+{t:'Correggi l’errore – guidato',i:'In ogni frase c’è un errore. Scrivi la parola giusta al posto di quella sbagliata.',items:[
+"My mum have got a red scooter.  →  My mum [[has]] got a red scooter.",
+"Look at that mountains over there!  →  Look at [[those]] mountains over there!",
+"There aren’t some pens on the desk.  →  There aren’t [[any]] pens on the desk.",
+"There is two dogs in the garden.  →  There [[are]] two dogs in the garden.",
+"It’s the Omar jacket.  →  It’s [[Omar’s]] jacket.",
+"The party is in Saturday.  →  The party is [[on]] Saturday.",
+"Have your aunt got a car?  →  [[Has]] your aunt got a car?",
+"The mens’ shoes are under the bed.  →  The [[men’s]] shoes are under the bed."]},
+{t:'Trova l’errore',i:'In ogni frase c’è un errore: scoprilo e riscrivi la frase corretta.',type:'rewrite',items:[
+{s:"Has your cousins got a dog?",a:["Have your cousins got a dog?"]},
+{s:"The film starts in nine o’clock.",a:["The film starts at nine o’clock."]},
+{s:"Is there some milk in the glass?",a:["Is there any milk in the glass?"]},
+{s:"Can you see this birds up there?",a:["Can you see those birds up there?"]},
+{s:"My uncle have got a boat.",a:["My uncle has got a boat."]},
+{s:"The students love there teacher.",a:["The students love their teacher."]}]},
+{t:'Translate',i:'Traduci in inglese. Poi confronta con la soluzione modello.',type:'free',items:[
+{s:"Di chi è questo zaino?  –  È dello zio di Sofia.",m:"Whose backpack is this? – It’s Sofia’s uncle’s."},
+{s:"Le scarpe dei bambini sono sotto il letto.",m:"The children’s shoes are under the bed."},
+{s:"Nella mia città ci sono due musei, ma non ci sono teatri.",m:"In my town there are two museums, but there aren’t any theatres."},
+{s:"Mia nonna ha un giardino grande e una casa gialla.",m:"My grandmother has got a big garden and a yellow house."},
+{s:"Di chi sono quegli occhiali?  –  Sono di mia sorella.",m:"Whose glasses are those? – They’re my sister’s."},
+{s:"Ci sono dei biscotti nella scatola?  –  No, non ce ne sono.",m:"Are there any biscuits in the box? – No, there aren’t."}]},
+{t:'Family',i:'Completa con la parola giusta.',items:[
+"My dad’s father is my [[grandfather|grandpa]].",
+"My mum’s brother is my [[uncle]].",
+"My uncle’s son is my [[cousin]].",
+"My mum’s other daughter is my [[sister]].",
+"My mum’s sister is my [[aunt]].",
+"My dad’s wife is my [[mum|mother]]."]},
+{t:'Completa il testo (1)',i:'Completa con la parola adatta (verbo, aggettivo, preposizione ecc.).',type:'text',items:[
+"Hi! My name (1) [[is]] Elisa and I (2) [[am]] thirteen. I live (3) [[in]] Rho, a city near Milan. I (4) [[have]] got a brother and two cousins. (5) [[My]] brother’s name is Davide and he (6) [[has]] got short curly hair. (7) [[Our]] flat is small: (8) [[there is|there’s]] a kitchen, two bedrooms and a bathroom, but there aren’t (9) [[any]] balconies. We (10) [[have]] got a tortoise. (11) [[Its]] name is Franklin. I go to school (12) [[on]] Mondays and Tuesdays, and the lessons start (13) [[at]] ten past eight."]},
+{t:'Completa il testo (2)',i:'Completa con la parola adatta (verbo, aggettivo, preposizione ecc.).',type:'text',items:[
+"My best friend (1) [[is]] Sofia. She (2) [[has]] got straight blond hair and blue eyes. (3) [[Her]] grandparents have got a farm (4) [[in]] the countryside, (5) [[opposite]] a small lake. There (6) [[are]] some cows, but there (7) [[isn’t|is not]] a horse. (8) [[Whose]] is the old blue tractor? It’s (9) [[Sofia’s]] grandfather’s! We often go there (10) [[at|on]] the weekend. We usually eat (11) [[some]] fresh cheese and bread. It’s (12) [[our]] favourite place!"]}
+]},
+
+/* ================= DSA ================= */
+{id:'dsa',name:'DSA',desc:'Stessi argomenti, meno item: con box di parole, qualche scelta e ripassi veloci.',exercises:[
+{t:'Pronouns',i:'Completa con il pronome personale (soggetto o complemento).',tip:TIP.pron,items:[
+"My teachers are strict, but I like [[them]].",
+"Greta and I are neighbours. [[We]] walk to school together.",
+"This is my cousin Jack. I always play with [[him]].",
+"Emma is a good singer. [[She]] sings in a choir."]},
+{t:'Question words',i:'Completa con le parole del box (due sono in più).',tip:TIP.qw,box:['Whose','Why','How many','What time','Who','Where'],items:[
+"[[Whose]] scarf is this?  –  It’s Greta’s.",
+"[[Why]] are you crying?  –  Because I’m sad.",
+"[[How many]] sisters has Leo got?  –  One.",
+"[[What time]] does the train arrive?  –  At quarter past five."]},
+{t:'Articles',i:'Completa con a / an / the oppure – (nessun articolo).',tip:TIP.art,items:[
+"Leo’s mother is [[a]] nurse.",
+"Can you open [[the]] window, please?",
+"I love [[–]] chocolate.",
+"She is eating [[an]] apple.",
+"The Sun is [[a]] star."]},
+{t:'Adjectives',i:'Metti in ordine le parole e scrivi il gruppo nominale.',tip:TIP.adj,type:'rewrite',items:[
+{s:"a / bike / blue / new / lovely",a:["a lovely new blue bike"]},
+{s:"an / film / long / interesting / American",a:["an interesting long American film"]},
+{s:"a / dog / small / old / brown",a:["a small old brown dog"]}]},
+{t:'Plurals',i:'Scrivi il plurale.',tip:TIP.plu,items:[
+"man  →  [[men]]","wife  →  [[wives]]","family  →  [[families]]","foot  →  [[feet]]","bus  →  [[buses]]"]},
+{t:'This / That / These / Those',i:'Cerchia o completa.',tip:TIP.dem,items:[
+"Look at ((that*|those|this)) mountain over there!",
+"((This|These*|That)) cookies here are delicious.",
+"[[Those]] trees near the river are old.",
+"[[This]] is my seat, here next to me."]},
+{t:'There is / There are',i:'Completa con le parole del box (si possono usare più volte).',tip:TIP.there,box:['is','are','isn’t','aren’t','Is','Are'],items:[
+"There [[is]] a small museum in my town.",
+"There [[are]] a lot of desks in the classroom.",
+"There [[isn’t]] any bread in the kitchen.",
+"[[Is]] there a post office near here?  –  Yes, there [[is]].",
+"There [[aren’t]] any theatres in my town."]},
+{t:'Prepositions',i:'Completa con le parole del box (una è in più).',tip:TIP.pl+" Tempo: "+TIP.pt,box:['opposite','between','on','at','in','under','behind'],items:[
+"The supermarket is [[opposite]] the library, across the street.",
+"My school is [[between]] the park and the church.",
+"The keys are [[in]] my jacket.",
+"The ball is [[under]] the car.",
+"We have Science [[on]] Friday afternoon.",
+"The film begins [[at]] eight o’clock."]},
+{t:'Have got',i:'Completa con la forma corretta di have got.',tip:TIP.hg,items:[
+"(+)  They [[have got|’ve got]] a big TV.",
+"(+)  My aunt [[has got|’s got]] a beautiful garden.",
+"(–)  Elisa [[hasn’t got|has not got]] any sisters.",
+"(–)  We [[haven’t got|have not got]] a car.",
+"(?)  [[Have]] they got a swimming pool?",
+"Has Omar got a bike?  –  No, he [[hasn’t|has not]]."]},
+{t:'Possessives',i:'Completa con l’aggettivo possessivo o riscrivi con il genitivo sassone.',tip:TIP.pa+" "+TIP.gs,items:[
+"Omar loves football. [[His]] favourite team is Inter.",
+"The cat is licking [[its]] fur.",
+"We are cleaning [[our]] classroom.",
+"the phone of my brother  →  [[my brother’s]] phone",
+"the shoes of the children  →  the [[children’s]] shoes"]},
+{t:'Some / any',i:'Cerchia.',tip:TIP.sa,items:[
+"Would you like ((some*|any|no)) biscuits?",
+"Is there ((some|any*|no)) juice left?",
+"I’ve got ((some|any|no*)) idea."]},
+{t:'Correggi l’errore – guidato',i:'Scrivi la parola giusta al posto di quella sbagliata.',items:[
+"My mum have got a red scooter.  →  My mum [[has]] got a red scooter.",
+"Look at that mountains over there!  →  Look at [[those]] mountains over there!",
+"There aren’t some pens on the desk.  →  There aren’t [[any]] pens on the desk.",
+"There is two dogs in the garden.  →  There [[are]] two dogs in the garden.",
+"It’s the Omar jacket.  →  It’s [[Omar’s]] jacket."]},
+{t:'Family',i:'Completa con le parole del box (una è in più).',box:['grandfather','uncle','cousin','sister','aunt','brother'],items:[
+"My dad’s father is my [[grandfather|grandpa]].",
+"My mum’s brother is my [[uncle]].",
+"My uncle’s son is my [[cousin]].",
+"My mum’s other daughter is my [[sister]].",
+"My mum’s sister is my [[aunt]]."]},
+{t:'Completa il testo (1)',i:'Dove ci sono due parole cerchia quella giusta, negli altri spazi scrivi la parola.',type:'text',items:[
+"Hi! My name (1) ((is*|are)) Elisa and I (2) ((am*|is)) thirteen. I live (3) ((in*|on)) Rho, a city near Milan. We (4) [[have got|’ve got]] a tortoise. (5) [[Its]] name is Franklin. I go to school (6) [[on]] Mondays and Tuesdays. (7) [[There is|There’s]] a small park near our flat, but there aren’t (8) [[any]] shops. I (9) [[have|’ve]] got a brother and a cousin. (10) [[His]] name is Davide."]},
+{t:'Completa il testo (2) – con il box',i:'Completa con le parole del box (alcune servono più volte).',box:['is','am','are','in','on','have','has','Its','There is','any','some'],type:'text',items:[
+"Hello! My name (1) [[is]] Leo and I (2) [[am]] twelve. I live (3) [[in]] Cuggiono. I (4) [[have]] got a sister and a cousin. My sister (5) [[has]] got red hair. We (6) [[have]] got a parrot. (7) [[Its]] name is Zazà. (8) [[There is]] a lake near my house, but there aren’t (9) [[any]] beaches. We have Art (10) [[on]] Wednesdays, and sometimes we draw (11) [[some]] animals."]}
+]},
+
+/* ================= OBIETTIVI MINIMI ================= */
+{id:'om',name:'Obiettivi minimi',desc:'Scelta multipla, scelta tra due parole ed esercizi da completare.',exercises:[
+{t:'Multiple choice',i:'Scegli la risposta corretta: A, B, C o D.',type:'mc',items:[
+{q:"Greta and I are neighbours. __ walk to school together.",o:["They","We*","Us","Our"]},
+{q:"Here is my teacher. __ car is old.",o:["He","His*","Her","Him"]},
+{q:"__ umbrella is this?  –  It’s Sofia’s.",o:["Who","What","Whose*","Who’s"]},
+{q:"Leo’s father is __ electrician.",o:["a","the","an*","some"]},
+{q:"The plural of ‘foot’ is…",o:["foots","feet*","feets","foot’s"]},
+{q:"Look at __ mountains over there!",o:["this","that","those*","a"]},
+{q:"There __ two museums in my town.",o:["is","are*","has","have"]},
+{q:"The party is __ Saturday.",o:["in","at","on*","to"]},
+{q:"The bakery is __ the school, across the street.",o:["between","opposite*","in","at"]},
+{q:"My aunt __ a red scooter.",o:["have got","is got","has got*","haven’t"]},
+{q:"__ they got a swimming pool?",o:["Has","Have*","Is","Do"]},
+{q:"Could I have __ bread, please?",o:["any","a","some*","no"]},
+{q:"There isn’t __ sugar in my tea.",o:["some","any*","a","an"]},
+{q:"The __ shoes are under the bed.",o:["men’s*","mens’","mans’","mens"]},
+{q:"Kevin and Nina are cousins. __ grandmother lives in Rome.",o:["Their*","There","His","They"]},
+{q:"We have Science __ Friday afternoon.",o:["in","at","on*","to"]},
+{q:"The train leaves __ ten past seven.",o:["in","on","to","at*"]},
+{q:"Which sentence is correct?",o:["My mum have got a scooter.","My mum has got a scooter.*","My mum is got a scooter.","My mum got has a scooter."]},
+{q:"Which sentence is correct?",o:["There is some books on the shelf.","There are some books on the shelf.*","It are some books on the shelf.","They are some books there."]},
+{q:"What is the plural of ‘wife’?",o:["wifes","wives*","wive","wifes’"]},
+{q:"My dad’s sister is my…",o:["uncle","aunt*","cousin","grandmother"]},
+{q:"Which is correct?",o:["a dress long green","a long green dress*","green a long dress","a green long dress"]}]},
+{t:'Question words',i:'Cerchia la parola giusta.',tip:TIP.qw,items:[
+"((Whose*|Who)) scarf is this?  –  It’s Greta’s.",
+"((How|Why*)) are you angry?  –  Because I lost my keys.",
+"((How many*|What time)) cousins have you got?  –  Seven.",
+"((Where|What time*)) does the bus leave?  –  At ten past seven.",
+"((Who*|Whose)) is that girl?  –  She’s my cousin.",
+"((Where*|When)) is my umbrella?  –  Behind the door."]},
+{t:'Articles',i:'Cerchia a, an oppure the.',tip:TIP.art,items:[
+"My cousin is ((a*|an)) nurse.",
+"Can you switch off ((the*|a)) light, please?",
+"She is eating ((a|an*)) apple.",
+"It takes ((a|an*)) hour to get there."]},
+{t:'Plurals',i:'Cerchia il plurale giusto.',tip:TIP.plu,items:[
+"man  →  ((mans|men*))",
+"foot  →  ((foots|feet*))",
+"wife  →  ((wifes|wives*))",
+"family  →  ((families*|familys))",
+"bus  →  ((buss|buses*))"]},
+{t:'This / That / These / Those',i:'Cerchia la parola giusta.',tip:TIP.dem,items:[
+"Look at ((that*|those)) tree over there!",
+"((This|These*)) cookies here are delicious.",
+"Who are ((that|those*)) people near the door?",
+"((That|This*)) is my seat, here next to me.",
+"((Those|That*)) car over there is very fast."]},
+{t:'There is / There are',i:'Cerchia o completa.',tip:TIP.there,items:[
+"There ((is*|are)) a small museum in my town.",
+"There ((is|are*)) a lot of desks in the classroom.",
+"((Is*|Are)) there a post office near here?",
+"There [[isn’t|is not]] any bread in the kitchen.",
+"There [[are]] two windows in my room."]},
+{t:'Prepositions',i:'Cerchia la parola giusta.',tip:TIP.pl+" Tempo: "+TIP.pt,items:[
+"The supermarket is ((opposite*|between)) the library, across the street.",
+"My school is ((between*|on)) the park and the church.",
+"We have Science ((in|on*)) Friday afternoon.",
+"The film begins ((at*|in)) eight o’clock.",
+"My cousin’s birthday is ((in*|on)) March.",
+"The keys are ((in*|at)) my jacket."]},
+{t:'Have got',i:'Completa con la forma corretta di have got.',tip:TIP.hg,items:[
+"(+)  They [[have got|’ve got]] a big TV.",
+"(+)  My aunt [[has got|’s got]] a beautiful garden.",
+"(–)  Elisa [[hasn’t got|has not got]] any sisters.",
+"(–)  We [[haven’t got|have not got]] a car.",
+"(?)  [[Have]] they got a swimming pool?",
+"Has Omar got a bike?  –  No, he [[hasn’t|has not]]."]},
+{t:'Possessive adjectives',i:'Cerchia la parola giusta.',tip:TIP.pa,items:[
+"Omar loves football. ((His*|Her)) favourite team is Inter.",
+"My parents like ((there|their*)) jobs.",
+"We are cleaning ((our*|us)) classroom.",
+"Is this ((you|your*)) bag, Sofia?",
+"The cat is licking ((it’s|its*)) fur."]},
+{t:'Possessive ’s',i:'Cerchia la forma giusta.',tip:TIP.gs,items:[
+"the phone of my brother  →  my ((brother’s*|brothers’)) phone",
+"the shoes of the children  →  the ((children’s*|childrens’)) shoes",
+"the bag of Omar  →  ((Omar’s*|Omars’)) bag",
+"the desks of the teachers  →  the ((teacher’s|teachers’*)) desks",
+"the flat of Kevin and Nina  →  ((Kevin’s and Nina’s|Kevin and Nina’s*)) flat"]},
+{t:'Some / any',i:'Cerchia some oppure any.',tip:TIP.sa,items:[
+"Would you like ((some*|any)) biscuits?",
+"Is there ((some|any*)) juice left?",
+"I can see ((some*|any)) birds in the tree.",
+"There isn’t ((some|any*)) sugar in my tea.",
+"Could I have ((some*|any)) bread, please?"]},
+{t:'Family',i:'Completa con le parole del box (una è in più).',box:['grandfather','uncle','cousin','sister','aunt','brother'],items:[
+"My dad’s father is my [[grandfather|grandpa]].",
+"My mum’s brother is my [[uncle]].",
+"My uncle’s son is my [[cousin]].",
+"My mum’s other daughter is my [[sister]].",
+"My mum’s sister is my [[aunt]]."]},
+{t:'Correggi l’errore – guidato',i:'Scrivi la parola giusta al posto di quella sbagliata.',items:[
+"My mum have got a red scooter.  →  My mum [[has]] got a red scooter.",
+"Look at that mountains over there!  →  Look at [[those]] mountains over there!",
+"There aren’t some pens on the desk.  →  There aren’t [[any]] pens on the desk.",
+"There is two dogs in the garden.  →  There [[are]] two dogs in the garden."]},
+{t:'Completa il testo (1)',i:'Dove ci sono due parole cerchia quella giusta, negli altri spazi scrivi la parola.',type:'text',items:[
+"Hi! My name (1) ((is*|are)) Elisa and I (2) ((am*|is)) thirteen. I live (3) ((in*|on)) Rho. We (4) ((have got*|has got)) a tortoise. (5) ((Its*|It’s)) name is Franklin. I go to school (6) [[on]] Mondays and Tuesdays. (7) [[There is|There’s]] a small park near our flat, but there aren’t (8) [[any]] shops. I (9) [[have|’ve]] got a brother and a cousin."]},
+{t:'Completa il testo (2) – con il box',i:'Completa con le parole del box (una è in più).',box:['is','am','in','have got','Its','on','are'],type:'text',items:[
+"Hello! My name (1) [[is]] Leo and I (2) [[am]] twelve. I live (3) [[in]] Cuggiono. We (4) [[have got|’ve got]] a parrot. (5) [[Its]] name is Zazà. I go to school (6) [[on]] Mondays and Wednesdays."]}
+]}
+];
+
+/* ===== UNIFICAZIONE: un'unica serie di esercizi, senza distinzione di livello ===== */
+(function(){
+var ORDER=['pron','qw','art','adj','plu','dem','there','prep','hg','sa','pa','gs','fam','corr','trova','tr'];
+var BASE={pron:'Pronouns',qw:'Question words',art:'Articles',adj:'Adjectives',plu:'Plurals',dem:'This / That / These / Those',there:'There is / There are',prep:'Prepositions',hg:'Have got',sa:'Some / any / no',pa:'Possessive adjectives',gs:'Possessive ’s',fam:'Family',corr:'Correggi l’errore – guidato',trova:'Trova l’errore',tr:'Translate'};
+function topicOf(t){t=t.toLowerCase();
+ if(/^pronouns/.test(t))return'pron';if(/^question/.test(t))return'qw';if(/^articles/.test(t))return'art';if(/^adjectives/.test(t))return'adj';
+ if(/^plurals/.test(t))return'plu';if(/^this/.test(t))return'dem';if(/^there is/.test(t))return'there';if(/^prepositions/.test(t))return'prep';
+ if(/^have got/.test(t))return'hg';if(/^some/.test(t))return'sa';if(/^possessive adjectives|^possessives/.test(t))return'pa';if(/^possessive ’s/.test(t))return'gs';
+ if(/^family/.test(t))return'fam';if(/^correggi/.test(t))return'corr';if(/^trova/.test(t))return'trova';if(/^translate/.test(t))return'tr';
+ if(/^multiple/.test(t))return'mc';if(/^completa il testo/.test(t))return'text';return'other'}
+function stem(x){var s=typeof x==='string'?x:(x.s||x.q||'');return s.replace(/\[\[[^\]]*\]\]|\(\([^)]*\)\)/g,'_').toLowerCase().replace(/[^a-z_ ]/g,'').replace(/\s+/g,' ').trim()}
+function kind(ex){if(ex.type==='rewrite')return'rewrite';if(ex.type==='free')return'free';if(ex.box)return'box';
+ var s=ex.items.join(' ');return s.indexOf('((')>-1?'choice':'open'}
+var RANK={choice:0,box:1,open:2,rewrite:3,free:4};
+var byId={};DATA.forEach(function(l){byId[l.id]=l});
+var seen={},buckets={},texts=[];
+['om','dsa','standard'].forEach(function(id){
+ byId[id].exercises.forEach(function(ex){
+  var tp=topicOf(ex.t);
+  if(tp==='text'||tp==='mc'||tp==='other')return;
+  var k=kind(ex);
+  var items=ex.items.filter(function(it){var s=stem(it);if(seen[s])return false;seen[s]=1;return true});
+  if(!items.length)return;
+  var key=tp+'|'+k+(k==='box'?'|'+ex.box.slice().sort().join(','):'');
+  if(!buckets[key])buckets[key]={tp:tp,k:k,box:ex.box,i:ex.i,tip:ex.tip,items:[]};
+  buckets[key].items=buckets[key].items.concat(items);
+  if(k==='open'&&!buckets[key].i)buckets[key].i=ex.i;
+ });
+});
+var list=[];
+function interleave(x,y){var out=[],i=0;while(i<x.length||i<y.length){if(i<x.length)out.push(x[i]);if(i<y.length)out.push(y[i]);i++}return out}
+ORDER.forEach(function(tp){
+ var bs=Object.keys(buckets).map(function(k){return buckets[k]}).filter(function(b){return b.tp===tp});
+ var ch=[],op=[],boxes=[],others=[];
+ bs.forEach(function(b){
+  if(b.k==='choice')ch=ch.concat(b.items);
+  else if(b.k==='open')op=op.concat(b.items);
+  else if(b.k==='box'&&b.items.length<3)op=op.concat(b.items);
+  else others.push(b);
+ });
+ var mixed=interleave(ch,op);
+ var exs=[];
+ if(mixed.length>=2||(mixed.length&&!others.length)){
+  var hasC=ch.length>0,hasO=mixed.join(' ').indexOf('[[')>-1;
+  var first=bs.filter(function(b){return b.i})[0];
+  var ins=hasC?(hasO?'Cerchia la parola giusta o completa.':'Cerchia la parola giusta.'):(first?first.i:'Completa.');
+  exs.push({k:0,items:mixed,i:ins});
+ }
+ others.forEach(function(b){
+  if(b.k==='box')exs.push({k:1,items:b.items,box:b.box,i:'Completa con le parole del box (alcune sono in più).'});
+  else exs.push({k:b.k==='rewrite'?2:3,items:b.items,i:b.i,type:b.k==='rewrite'?'rewrite':'free'});
+ });
+ exs.sort(function(a,b){return a.k-b.k});
+ exs.forEach(function(e,i){
+  var ex={t:BASE[tp]+(exs.length>1?' ('+(i+1)+')':''),i:e.i,box:e.box,items:e.items,tip:i===0?TIP[tp]:null};
+  if(e.type)ex.type=e.type;
+  if(tp==='prep'&&i===0)ex.tip=TIP.pl+' Tempo: '+TIP.pt;
+  if(e.type==='free')ex.i='Traduci in inglese. Poi confronta con la soluzione modello.';
+  list.push(ex);
+ });
+});
+/* quiz a scelta multipla */
+var mc=byId.om.exercises.filter(function(e){return e.type==='mc'})[0];
+list.push({t:'Quiz di ripasso – scelta multipla',i:'Scegli la risposta corretta: A, B, C o D.',type:'mc',items:mc.items});
+/* testi da completare */
+var T=function(lv,i){return byId[lv].exercises.filter(function(e){return /^completa il testo/i.test(e.t)})[i]};
+var tx1=T('standard',0),tx2=T('standard',1),tx3=T('dsa',1);
+var zoe={t:'Completa il testo (3)',i:'Dove ci sono due parole cerchia quella giusta, negli altri spazi scrivi la parola.',type:'text',items:[
+"Hello! My name (1) ((is*|are)) Zoe and I (2) ((am*|is)) eleven. I live (3) ((in*|on)) Saronno with (4) [[my]] parents and my two sisters. We (5) [[have got|’ve got]] a big garden, but there (6) [[isn’t|is not]] a swimming pool. (7) ((Its*|It’s)) best part is the old apple tree. My sisters’ names (8) [[are]] Ada and Bea. (9) [[Their]] room is next to mine. I go to school (10) ((on*|in)) Mondays, Tuesdays and Thursdays, and my lessons begin (11) [[at]] eight o’clock."]};
+[[tx1,'Completa il testo (1)'],[zoe,'Completa il testo (2)'],[tx3,'Completa il testo (3) – con il box'],[tx2,'Completa il testo (4)']].forEach(function(p){var e=p[0];e.t=p[1];if(e.box)e.i='Completa con le parole del box (alcune servono più volte).';list.push(e)});
+DATA=[{id:'all',name:'Tutti gli esercizi',desc:'',exercises:list}];
+})();
+
+/* ===== Esercizi di altro tipo (distrattori) ===== */
+(function(){
+var L=DATA[0].exercises;
+function after(prefix,ex){var idx=-1;L.forEach(function(e,i){if(e.t.indexOf(prefix)===0)idx=i});L.splice(idx+1,0,ex)}
+after('Question words',{t:'Abbina domande e risposte',i:'Scegli per ogni domanda la risposta giusta.',type:'match',items:[
+{l:"Whose book is this?",a:"It’s Nina’s."},
+{l:"How many dogs have you got?",a:"Two."},
+{l:"Where is the bank?",a:"Opposite the school."},
+{l:"Why are you late?",a:"Because of the traffic."},
+{l:"Has Omar got a tablet?",a:"No, he hasn’t."},
+{l:"Are there any biscuits?",a:"Yes, there are."}]});
+after('Have got',{t:'Trasforma la frase',i:'Riscrivi la frase come indicato: (–) negativa, (?) domanda.',type:'rewrite',items:[
+{s:"Nina has got a bike.  (–)",a:["Nina hasn’t got a bike.","Nina has not got a bike."]},
+{s:"There is a bank near here.  (?)",a:["Is there a bank near here?"]},
+{s:"They have got a garden.  (?)",a:["Have they got a garden?"]},
+{s:"We’ve got some biscuits.  (–)",a:["We haven’t got any biscuits.","We have not got any biscuits."]}]});
+after('Family',{t:'Abbina le definizioni',i:'Scegli la parola giusta per ogni definizione.',type:'match',items:[
+{l:"your mother’s mother",a:"grandmother"},
+{l:"your aunt’s children",a:"cousins"},
+{l:"your father’s sister",a:"aunt"},
+{l:"your parents’ parents",a:"grandparents"},
+{l:"your sister’s brother",a:"brother"}]});
+after('Family',{t:'Trova l’intruso',i:'Cerchia la parola che non c’entra con le altre.',items:[
+"((uncle|aunt|table*|cousin))",
+"((under|between|opposite|some*))",
+"((knives|teeth|boxes|man*))",
+"((his|her|its|those*|their))",
+"((on|at|in|any*))"]});
+after('Trova l’errore',{t:'Riordina le parole',i:'Metti le parole in ordine e scrivi la frase.',type:'rewrite',items:[
+{s:"got / has / a / Nina / scooter",a:["Nina has got a scooter."]},
+{s:"isn’t / there / a / in / garden / my / flat / a",a:["There isn’t a garden in my flat."]},
+{s:"toys / the / are / children’s / where",a:["Where are the children’s toys?"]},
+{s:"got / you / have / any / cousins",a:["Have you got any cousins?"]}]});
+L.splice(L.length-5,0,
+{t:'Vero o falso',i:'Leggi il testo e cerchia True o False.',read:"Look at Kevin’s room. There is a big bed under the window. There are two posters on the wall and a desk between the bed and the door. Kevin hasn’t got a TV, but he has got a laptop and a lot of books. His cat sleeps on the chair.",items:[
+"The bed is under the window.  ((True*|False))",
+"There are three posters on the wall.  ((True|False*))",
+"The desk is between the bed and the door.  ((True*|False))",
+"Kevin has got a TV.  ((True|False*))",
+"Kevin has got a lot of books.  ((True*|False))",
+"The cat is on the bed.  ((True|False*))"]},
+{t:'Completa il dialogo',i:'Scegli la risposta giusta.',type:'mc',items:[
+{q:"A: Whose coat is this?   B: …",o:["It’s Leo’s.*","Yes, it is.","He has got.","They’re Leo."]},
+{q:"A: Have you got any brothers?   B: …",o:["Yes, I have. I’ve got two.*","Yes, I am.","No, I haven’t two.","Yes, there are."]},
+{q:"A: Is there a supermarket near here?   B: …",o:["Yes, there are.","No, there isn’t.*","No, it hasn’t.","Yes, I have."]},
+{q:"A: What time does the film start?   B: …",o:["At eight.*","In Monday.","On eight.","Yes, at."]}]});
+})();
+
+/* ===== Domande di teoria ===== */
+(function(){
+var L=DATA[0].exercises;
+function after(prefix,ex){var idx=-1;L.forEach(function(e,i){if(e.t.indexOf(prefix)===0)idx=i});L.splice(idx+1,0,ex)}
+after('Completa il dialogo',{t:'Teoria – scelta multipla',i:'Rispondi alle domande sulla grammatica.',type:'mc',items:[
+{q:"Con quali soggetti si usa “has got”?",o:["I, you, we, they","he, she, it*","solo con he","solo con it"]},
+{q:"Come si forma la domanda con have got?",o:["Do + soggetto + have got?","Soggetto + have got?","Have/Has + soggetto + got?*","Got + have + soggetto?"]},
+{q:"Quale parola si usa per chiedere “di chi è?”",o:["Who","Which","Who’s","Whose*"]},
+{q:"Quando si usa “an” davanti a un nome?",o:["Quando inizia con un suono di vocale*","Quando il nome è plurale","Quando inizia con una consonante","Con i nomi di persona"]},
+{q:"Come si forma il plurale di “city”?",o:["citys","cities (-y diventa -ies)*","cityes","city (non cambia)"]},
+{q:"Quale preposizione si usa con i giorni della settimana?",o:["in","at","to","on*"]},
+{q:"Quale preposizione si usa con gli orari (es. “eight o’clock”)?",o:["at*","on","in","by"]},
+{q:"“There is” si usa con…",o:["solo nomi plurali","nomi singolari e non numerabili*","solo persone","solo oggetti piccoli"]},
+{q:"Dove si mette l’aggettivo in inglese?",o:["Dopo il nome","Prima del nome*","In fondo alla frase","Dove si vuole"]},
+{q:"Gli aggettivi inglesi al plurale…",o:["prendono la -s","prendono la -es","non cambiano*","cambiano il genere"]},
+{q:"Qual è la differenza tra “this” e “that”?",o:["This è per il plurale, that per il singolare","This indica ciò che è vicino, that ciò che è lontano*","This è per le persone, that per gli oggetti","Nessuna differenza"]},
+{q:"Con due possessori che condividono lo stesso oggetto (Chris e Ben), dove va il ’s?",o:["Su entrambi i nomi","Sul primo nome","Su nessun nome","Solo sull’ultimo nome*"]},
+{q:"“Its” (senza apostrofo) significa…",o:["it is","it has","suo, di esso (possesso)*","loro"]},
+{q:"“Any” si usa di solito…",o:["nelle frasi affermative","nelle frasi negative e nelle domande*","solo nelle offerte","solo con i nomi plurali"]}]});
+after('Teoria – scelta',{t:'Teoria – vero o falso',i:'Cerchia Vero oppure Falso.',items:[
+"I possessivi dipendono dal possessore: his = di lui, her = di lei.  ((Vero*|Falso))",
+"In inglese gli aggettivi concordano con il nome in genere e numero.  ((Vero|Falso*))",
+"Si dice “a university” perché la parola inizia con un suono di consonante.  ((Vero*|Falso))",
+"Con i giorni della settimana si usa la preposizione “in”.  ((Vero|Falso*))",
+"Con un nome plurale regolare (the students) il genitivo sassone si forma con il solo apostrofo.  ((Vero*|Falso))",
+"“Whose” serve a chiedere a chi appartiene qualcosa.  ((Vero*|Falso))",
+"“There are” si usa con i nomi singolari.  ((Vero|Falso*))",
+"“Hasn’t got” è la forma negativa di “has got”.  ((Vero*|Falso))"]});
+})();
+
+</script>
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)};
+function h(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+function norm(s){return String(s||'').toLowerCase().replace(/[’‘`´]/g,"'").replace(/[–—−]/g,'-').replace(/\s+/g,' ').trim().replace(/[.!?]+$/,'').trim()}
+var DASH=['-','x','0','niente','nothing','no article','nessuno'];
+function accepts(ans,val){var v=norm(val);if(!v)return false;return ans.some(function(a){var n=norm(a);if(n==='-')return DASH.indexOf(v)>-1;return n===v})}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+var RX=/(\(\([^)]*\)\)|\[\[[^\]]*\]\])/;
+
+function buildInline(str,ex,parent){
+  str.split(RX).forEach(function(p){
+    if(!p)return;
+    if(p.indexOf('((')===0){
+      var opts=shuffle(p.slice(2,-2).split('|').map(function(o){var ok=o.slice(-1)==='*';return {t:ok?o.slice(0,-1):o,ok:ok}}));
+      var seg=h('span','seg');seg.setAttribute('role','group');
+      var g={type:'choice',el:seg,opts:opts,sel:-1,btns:[],mark:null};
+      opts.forEach(function(o,i){var b=h('button',null,o.t);b.type='button';b.setAttribute('aria-pressed','false');
+        b.onclick=function(){g.sel=i;g.btns.forEach(function(x,k){x.setAttribute('aria-pressed',k===i?'true':'false');x.classList.remove('ok','ko')});clearMark(g)};
+        g.btns.push(b);seg.appendChild(b)});
+      parent.appendChild(seg);ex.gaps.push(g);
+    }else if(p.indexOf('[[')===0){
+      var ans=p.slice(2,-2).split('|');
+      var inp=h('input','g');inp.type='text';inp.autocomplete='off';inp.autocapitalize='off';inp.spellcheck=false;
+      var L=Math.max.apply(null,ans.map(function(a){return a.length}));inp.size=Math.max(4,L+2);
+      inp.setAttribute('aria-label','Spazio da completare');
+      var g2={type:'text',el:inp,ans:ans,mark:null};
+      inp.oninput=function(){inp.classList.remove('ok','ko');clearMark(g2)};
+      parent.appendChild(inp);ex.gaps.push(g2);
+    }else parent.appendChild(document.createTextNode(p));
+  });
+}
+function clearMark(g){if(g.mark){g.mark.remove();g.mark=null}if(g.solEl){g.solEl.remove();g.solEl=null}}
+function addMark(g,ok){clearMark(g);var m=h('span','mark '+(ok?'ok':'ko'),ok?'✓':'✗');m.setAttribute('aria-label',ok?'giusto':'sbagliato');
+  var t=g.type==='choice'?g.el:g.el;t.parentNode.insertBefore(m,t.nextSibling);g.mark=m}
+function addSol(g,txt){var s=h('span','sol','→ '+txt);var ref=g.mark||g.el;ref.parentNode.insertBefore(s,ref.nextSibling);g.solEl=s}
+
+function buildEx(ex,idx,lv){
+  ex.gaps=[];ex.frees=[];ex.rws=[];ex.mcs=[];ex.mts=[];
+  var c=h('section','ex');c.id=lv.id+'-e'+idx;
+  var t=h('h3');t.appendChild(h('span','n',String(idx+1)));t.appendChild(document.createTextNode(ex.t));c.appendChild(t);
+  if(ex.i)c.appendChild(h('p','ins',ex.i));
+  if(ex.tip){var d=h('details','tip');d.appendChild(h('summary',null,'Ripasso veloce'));d.appendChild(h('div',null,ex.tip));c.appendChild(d)}
+  if(ex.read)c.appendChild(h('p','read',ex.read));
+  if(ex.box)c.appendChild(h('div','box',ex.box.join('  •  ')));
+  var type=ex.type||'list';
+  if(type==='text'){
+    var p=h('p','txt');buildInline(ex.items[0],ex,p);c.appendChild(p);
+  }else if(type==='list'){
+    var ol=h('ol','items');ex.items.forEach(function(s){var li=h('li');buildInline(s,ex,li);ol.appendChild(li)});c.appendChild(ol);
+  }else if(type==='rewrite'){
+    var ol2=h('ol','items');
+    ex.items.forEach(function(it){var li=h('li');li.appendChild(document.createTextNode(it.s));
+      var inp=h('input','rw');inp.type='text';inp.autocomplete='off';inp.spellcheck=false;inp.setAttribute('aria-label','La tua risposta');
+      li.appendChild(inp);var o={el:inp,ans:it.a,li:li,mark:null};inp.oninput=function(){inp.classList.remove('ok','ko');if(o.fb){o.fb.remove();o.fb=null}};ex.rws.push(o);ol2.appendChild(li)});
+    c.appendChild(ol2);
+  }else if(type==='free'){
+    var ol3=h('ol','items');
+    ex.items.forEach(function(it){var li=h('li');li.appendChild(document.createTextNode(it.s));
+      var ta=h('textarea','rw');ta.setAttribute('aria-label','La tua traduzione');li.appendChild(ta);ex.frees.push({el:ta,li:li,m:it.m,box:null});ol3.appendChild(li)});
+    c.appendChild(ol3);c.appendChild(h('p','free-note','Autovalutazione: dopo “Controlla” confronta la tua frase con la soluzione modello (piccole differenze possono essere corrette).'));
+  }else if(type==='match'){
+    var all=shuffle(ex.items.map(function(it){return it.a}));
+    var ol5=h('ol','items');
+    ex.items.forEach(function(it){var li=h('li');li.appendChild(document.createTextNode(it.l+'  →  '));
+      var sel=h('select','sel');sel.setAttribute('aria-label','Abbina');var o0=h('option',null,'— scegli —');o0.value='';sel.appendChild(o0);
+      all.forEach(function(x){var o=h('option',null,x);o.value=x;sel.appendChild(o)});
+      var m={el:sel,a:it.a,li:li,fb:null};sel.onchange=function(){sel.classList.remove('ok','ko');if(m.fb){m.fb.remove();m.fb=null}};
+      li.appendChild(sel);ex.mts.push(m);ol5.appendChild(li)});
+    c.appendChild(ol5);
+  }else if(type==='mc'){
+    var ol4=h('ol','items');
+    ex.items.forEach(function(it){var li=h('li');li.appendChild(document.createTextNode(it.q));
+      var opts=shuffle(it.o.map(function(o){var ok=o.slice(-1)==='*';return {t:ok?o.slice(0,-1):o,ok:ok}}));
+      var grid=h('div','mcq');var g={type:'mc',el:grid,opts:opts,sel:-1,btns:[],mark:null};
+      opts.forEach(function(o,i){var b=h('button');b.type='button';b.setAttribute('aria-pressed','false');var l=h('b',null,'ABCD'[i]);b.appendChild(l);b.appendChild(document.createTextNode(o.t));
+        b.onclick=function(){g.sel=i;g.btns.forEach(function(x,k){x.setAttribute('aria-pressed',k===i?'true':'false');x.classList.remove('ok','ko')});if(g.res){g.res.remove();g.res=null}};
+        g.btns.push(b);grid.appendChild(b)});
+      li.appendChild(grid);ex.mcs.push(g);ol4.appendChild(li)});
+    c.appendChild(ol4);
+  }
+  ex.max=ex.gaps.length+ex.rws.length+ex.mcs.length+ex.mts.length;
+  var a=h('div','actions');
+  var bC=h('button','btn','Controlla');bC.type='button';
+  var bS=h('button','btn sec','Mostra soluzioni');bS.type='button';
+  var bR=h('button','btn sec','Ricomincia');bR.type='button';
+  var res=h('span','res');res.setAttribute('aria-live','polite');
+  a.appendChild(bC);a.appendChild(bS);a.appendChild(bR);a.appendChild(res);c.appendChild(a);
+  ex.res=res;ex.score=0;ex.checked=false;ex.lv=lv;
+  bC.onclick=function(){check(ex,false)};
+  bS.onclick=function(){check(ex,true)};
+  bR.onclick=function(){reset(ex)};
+  return c;
+}
+function check(ex,showSol){
+  var s=0;
+  ex.gaps.forEach(function(g){
+    var ok;
+    if(g.type==='choice'){
+      ok=g.sel>-1&&g.opts[g.sel].ok;
+      g.btns.forEach(function(b,i){b.classList.remove('ok','ko');if(g.sel===i)b.classList.add(ok?'ok':'ko');if(showSol&&g.opts[i].ok)b.classList.add('ok')});
+      addMark(g,ok);if(!ok&&showSol){/* correct option highlighted */}
+    }else{
+      ok=accepts(g.ans,g.el.value);g.el.classList.remove('ok','ko');g.el.classList.add(ok?'ok':'ko');addMark(g,ok);
+      if(!ok&&showSol)addSol(g,g.ans[0]);
+    }
+    if(ok)s++;
+  });
+  ex.mcs.forEach(function(g){
+    var ok=g.sel>-1&&g.opts[g.sel].ok;
+    g.btns.forEach(function(b,i){b.classList.remove('ok','ko');if(g.sel===i)b.classList.add(ok?'ok':'ko');if(showSol&&g.opts[i].ok)b.classList.add('ok')});
+    if(g.res)g.res.remove();
+    var r=h('span','mark '+(ok?'ok':'ko'),ok?'✓ Giusto':'✗ Da rivedere');g.el.parentNode.appendChild(r);g.res=r;
+    if(ok)s++;
+  });
+  ex.rws.forEach(function(o){
+    var ok=accepts(o.ans,o.el.value);o.el.classList.remove('ok','ko');o.el.classList.add(ok?'ok':'ko');
+    if(o.fb)o.fb.remove();
+    var f=h('div',ok?'model':'sol',ok?'✓ Giusto':'✗ Da rivedere'+(showSol?' → '+o.ans[0]:''));o.li.appendChild(f);o.fb=f;
+    if(ok)s++;
+  });
+  ex.mts.forEach(function(m){
+    var ok=m.el.value===m.a;m.el.classList.remove('ok','ko');m.el.classList.add(ok?'ok':'ko');
+    if(m.fb)m.fb.remove();if(m.solEl){m.solEl.remove();m.solEl=null}var f=h('span',ok?'mark ok':'mark ko',ok?' ✓':' ✗');
+    m.li.appendChild(f);m.fb=f;
+    if(!ok&&showSol){var sl=h('span','sol','→ '+m.a);m.li.appendChild(sl);m.solEl=sl}
+    if(ok)s++;
+  });
+  ex.frees.forEach(function(f){
+    if(f.box)f.box.remove();var m=h('div','model','Soluzione modello: '+f.m);f.li.appendChild(m);f.box=m;
+  });
+  ex.score=s;ex.checked=true;
+  ex.res.textContent=ex.max?('Punteggio: '+s+' / '+ex.max):'Confronta con le soluzioni modello';
+  updateScore(ex.lv);
+}
+function reset(ex){
+  ex.gaps.forEach(function(g){clearMark(g);if(g.type==='choice'){g.sel=-1;g.btns.forEach(function(b){b.classList.remove('ok','ko');b.setAttribute('aria-pressed','false')})}else{g.el.value='';g.el.classList.remove('ok','ko')}});
+  ex.mcs.forEach(function(g){g.sel=-1;if(g.res){g.res.remove();g.res=null}g.btns.forEach(function(b){b.classList.remove('ok','ko');b.setAttribute('aria-pressed','false')})});
+  ex.rws.forEach(function(o){o.el.value='';o.el.classList.remove('ok','ko');if(o.fb){o.fb.remove();o.fb=null}});
+  ex.mts.forEach(function(m){m.el.value='';m.el.classList.remove('ok','ko');if(m.fb){m.fb.remove();m.fb=null}if(m.solEl){m.solEl.remove();m.solEl=null}});
+  ex.frees.forEach(function(f){f.el.value='';if(f.box){f.box.remove();f.box=null}});
+  ex.score=0;ex.checked=false;ex.res.textContent='';updateScore(ex.lv);
+}
+function updateScore(lv){
+  var got=0,max=0,done=0;lv.ex.forEach(function(e){if(e.max){max+=e.max;if(e.checked){got+=e.score;done++}}});
+  var mx=0;lv.ex.forEach(function(e){mx+=e.max});
+  var chk=lv.ex.filter(function(e){return e.checked&&e.max}).reduce(function(a,e){return a+e.max},0);
+  lv.txt.textContent='Punti: '+got+' / '+chk+' negli esercizi controllati  ·  Totale disponibile: '+mx+' punti';
+  lv.bar.style.width=(chk?Math.round(got/chk*100):0)+'%';
+  lv.pct.textContent=chk?Math.round(got/chk*100)+'%':'—';
+}
+
+var tabsEl=$('#tabs'),lvEl=$('#levels');
+DATA.forEach(function(lv,li){
+  var tab=h('button','tab');tab.type='button';tab.setAttribute('role','tab');tab.id='tab-'+lv.id;
+  tab.innerHTML='<b></b><span></span>';tab.firstChild.textContent=lv.name;tab.lastChild.textContent=lv.desc;
+  tabsEl.appendChild(tab);
+  var sec=h('div');sec.id='lv-'+lv.id;sec.setAttribute('role','tabpanel');sec.hidden=true;
+  var sc=h('div','score');var pct=h('b',null,'—');var txt=h('span');var bw=h('div','bar');var bar=h('i');bw.appendChild(bar);
+  sc.appendChild(pct);sc.appendChild(bw);sc.appendChild(txt);
+  var all=h('button','btn','Controlla tutto');all.type='button';var rs=h('button','btn sec','Ricomincia tutto');rs.type='button';
+  sc.appendChild(all);sc.appendChild(rs);sec.appendChild(sc);
+  lv.txt=txt;lv.bar=bar;lv.pct=pct;lv.sec=sec;lv.tab=tab;lv.ex=lv.exercises;
+  lv.exercises.forEach(function(ex,i){sec.appendChild(buildEx(ex,i,lv))});
+  all.onclick=function(){lv.exercises.forEach(function(e){check(e,false)})};
+  rs.onclick=function(){lv.exercises.forEach(reset)};
+  lvEl.appendChild(sec);updateScore(lv);
+  tab.onclick=function(){show(lv.id,true)};
+});
+function show(id,scroll){
+  DATA.forEach(function(lv){var on=lv.id===id;lv.sec.hidden=!on;lv.tab.setAttribute('aria-selected',on?'true':'false')});
+  
+  if(scroll)window.scrollTo({top:tabsEl.offsetTop-90,behavior:'smooth'});
+}
+show(DATA[0].id,false);
+var big=$('#big');big.onclick=function(){var on=document.body.classList.toggle('big');big.setAttribute('aria-pressed',on?'true':'false');big.textContent=on?'A− Testo normale':'A+ Testo più grande'};
+var up=$('#up');up.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};
+window.addEventListener('scroll',function(){up.classList.toggle('show',window.scrollY>400)});
+})();
+
+</script>
+</body>
+</html>
